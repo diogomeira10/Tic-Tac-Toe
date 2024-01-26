@@ -1,13 +1,84 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  padding-bottom: 1em;
+  font-size: 2.5em;
+  color: #e44d26; 
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #333;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.square:hover {
+  background-color: #e44d26; 
+  color: #fff;
+}
+
+.botao_reiniciar {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #e44d26;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.botao_reiniciar:hover {
+  background-color: #333;
+}
+
+.tabuleiro {
+  padding-bottom: 20px;
+}
+
+.linha {
+  display: flex;
+}
+
+.jogadorAtual {
+  padding-bottom: 20px;
+  font-size: 1.2em;
+  color: #e44d26;
+}
+
+.container p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #e44d26; 
+  font-weight: bold;
+}
+
+
